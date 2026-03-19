@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservations</title>
+    <link rel="stylesheet" href="/Frontend/style.css">
+
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="nav-brand">
+            <div class="nav-logo">
+                <svg viewBox="0 0 16 16" fill="none">
+                    <path d="M2 12h12M4 12V6a4 4 0 018 0v6M6 6h4" stroke="white" stroke-width="1.5"
+                        stroke-linecap="round" />
+                </svg>
+            </div>
+            <div class="nav-brand-text">
+                <div class="brand-name">บ้านของผม</div>
+                <div class="brand-sub">ร้านอาหารไทยต้นตำรับ</div>
+            </div>
+        </div>
+        <div class="nav-links">
+            <a href="../Home.html"><button class="nav-btn nav-btn">หน้าแรก</button></a>
+            <a href="/Frontend/reservations/reservations.html"><button
+                    class="nav-btn nav-btn-active">จองโต๊ะ</button></a>
+            <a href="../status/status.html"><button class="nav-btn">เช็คสถานะ</button></a>
+            <a href="../Menu/menu.html"><button class="nav-btn">เมนู </button></a>
+        </div>
+    </nav>
+    <div>
+
+        <div class="container">
+            <div class="header">
+                แบบฟอร์มจองโต๊ะ
+            </div>
+            <div class="flex form-input">
+                <div class="header-form">Email</div>
+                <input class="form" name="email" type="email" placeholder="กรอกอีเมล">
+            </div>
+            <div class="flex form-input">
+                <div class="header-form">ชื่อ</div>
+                <input class="form" name="firstname" type="text" placeholder="ชื่อจริง">
+            </div>
+            <div class="flex form-input">
+                <div class="header-form">นามสกุล</div>
+                <input class="form" name="lastname" type="text" placeholder="นามสกุล">
+            </div>
+            <div class="flex form-input">
+                <div class="header-form">จำนวนคน</div>
+                <input class="form" name="size" type="number" placeholder="กรุณาใส่จำนวน" min="1" max="12">
+            </div>
+            <div class="flex form-input">
+                <div class="header-form">วันที่</div>
+                <input class="form" type="date" name="date">
+            </div>
+            <div class="form-input">
+                <label class="header-form">เลือกเวลา</label>
+                <div class="time-container">
+                    <button class="time-btn" data-time="10:00" value="10:00">10:00</button>
+                    <button class="time-btn" data-time="10:30" value="10:30">10:30</button>
+                    <button class="time-btn" data-time="11:00" value="11:00">11:00</button>
+                    <button class="time-btn" data-time="11:30" value="11:30">11:30</button>
+                    <button class="time-btn" data-time="12:00" value="12:00">12:00</button>
+                    <button class="time-btn" data-time="12:30" value="12:30">12:30</button>
+                    <button class="time-btn" data-time="13:00" value="13:00">13:00</button>
+                    <button class="time-btn" data-time="13:30" value="13:30">13:30</button>
+                    <button class="time-btn" data-time="14:00" value="14:00">14:00</button>
+                    <button class="time-btn" data-time="14:30" value="14:30">14:30</button>
+                    <button class="time-btn" data-time="15:00" value="15:00">15:00</button>
+                    <button class="time-btn" data-time="15:30" value="15:30">15:30</button>
+                    <button class="time-btn" data-time="16:00" value="16:00">16:00</button>
+                    <button class="time-btn" data-time="16:30" value="16:30">16:30</button>
+                    <button class="time-btn" data-time="17:00" value="17:00">17:00</button>
+                    <button class="time-btn" data-time="17:30" value="17:30">17:30</button>
+                    <button class="time-btn" data-time="18:00" value="18:00">18:00</button>
+                </div>
+                <div></div> คำอธิบาย(ไม่จำเป็นต้องระบุ)
+                <textarea name="description" placeholder="เช่น ขอโต๊ะริมหน้าต่าง , มีเค้กวันเกิด"></textarea>
+            </div>
+            <div id="message" class="message">
+                hi
+            </div>
+            <div class="center">
+                <button onclick="submitData()" class="button">ส่งข้อมูล</button>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/axios@1.13.2/dist/axios.min.js"></script>
+        <script src="./index.js"></script>
+</body>
+
+</html>

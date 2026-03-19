@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>บ้านของผม - จองโต๊ะออนไลน์</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600&family=Playfair+Display:wght@500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="nav-brand">
+            <div class="nav-logo">
+                <svg viewBox="0 0 16 16" fill="none">
+                    <path d="M2 12h12M4 12V6a4 4 0 018 0v6M6 6h4" stroke="white" stroke-width="1.5"
+                        stroke-linecap="round" />
+                </svg>
+            </div>
+            <div class="nav-brand-text">
+                <div class="brand-name">บ้านของผม</div>
+                <div class="brand-sub">ร้านอาหารไทยต้นตำรับ</div>
+            </div>
+        </div>
+        <div class="nav-links">
+            <a href="Home.html"><button class="nav-btn nav-btn-active">หน้าแรก</button></a>
+            <a href="/Frontend/reservations/reservations.html"><button class="nav-btn">จองโต๊ะ</button></a>
+            <a href="/Frontend/status/status.html"><button class="nav-btn">เช็คสถานะ</button></a>
+            <a href="Menu/menu.html"><button class="nav-btn">เมนู </button></a>
+        </div>
+    </nav>
+
+    <header class="page active" id="page-home">
+        <h1>จองโต๊ะออนไลน์</h1>
+        <p>ง่าย รวดเร็ว ยืนยันผ่านหน้าเว็บทันที</p>
+        <div class="hero-btns">
+            <a href="/Frontend/reservations/reservations.html">
+                <button class="btn-primary">จองโต๊ะเลย →</button>
+            </a>
+            <a href="./status/status.html">
+            <button class="btn-secondary">เช็คสถานะ</button>
+        </div></a>
+    </header>
+
+    <section class="hero-info-row">
+        <div class="hero-card">
+            <div class="icon-circle green">
+                <svg viewBox="0 0 24 24" width="22" fill="none">
+                    <circle cx="12" cy="12" r="9" stroke="#1D9E75" stroke-width="2" />
+                    <path d="M12 7v5l3 2" stroke="#1D9E75" stroke-width="2" stroke-linecap="round" />
+                </svg>
+            </div>
+            <div class="hero-card-label">เปิดทุกวัน</div>
+            <div class="hero-card-desc">10:00 - 18:00 น.</div>
+        </div>
+
+        <div class="hero-card">
+            <div class="avatar">
+                <svg viewBox="0 0 24 24" fill="none">
+                    <circle cx="12" cy="12" r="11" fill="#E9DCC9" />
+                    <path d="M12 12c2 0 3-1.5 3-3s-1-3-3-3-3 1.5-3 3 1 3 3 3z" stroke="#B36B00" stroke-width="1.5" />
+                    <path d="M6 18c1.5-2 4-3 6-3s4.5 1 6 3" stroke="#B36B00" stroke-width="1.5"
+                        stroke-linecap="round" />
+                </svg>
+            </div>
+            <div class="hero-card-label">รองรับสูงสุด</div>
+            <div class="hero-card-desc">12 ท่านต่อโต๊ะ</div>
+        </div>
+
+        <div class="hero-card">
+            <div class="icon-circle blue">
+                <svg viewBox="0 0 24 24" width="22" fill="none">
+                    <rect x="4" y="8" width="16" height="10" rx="2" stroke="#2F6FED" stroke-width="2" />
+                    <path d="M4 10h16" stroke="#2F6FED" stroke-width="2" />
+                </svg>
+            </div>
+            <div class="hero-card-label">เช็คสถานะบนเว็บ
+            </div>
+            <div class="hero-card-desc">เช็คสถานะบนเว็บได้ทันทีหลังจอง</div>
+        </div>
+    </section>
+
+    <section class="how-section">
+        <div class="section-title">วิธีการจองโต๊ะ</div>
+
+        <div class="step-box">
+            <div class="step-number">1</div>
+            <div class="step-text">
+                <h3>กรอกข้อมูลการจอง</h3>
+                <p>เลือกวันเวลา จำนวนคน และข้อความพิเศษ</p>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-number">2</div>
+            <div class="step-text">
+                <h3>ยืนยันทางหน้าเว็บ</h3>
+                <p>ตรวจสอบข้อมูลความถูกต้อง</p>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-number">3</div>
+            <div class="step-text">
+                <h3>รอร้านยืนยัน</h3>
+                <p>ทางร้านจะแจ้งผลภายใน 15 นาที</p>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-number">4</div>
+            <div class="step-text">
+                <h3>รับการยืนยัน</h3>
+                <p>มาถึงร้านตามเวลาที่นัดหมายได้เลย</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.13.2/dist/axios.min.js"></script>
+</body>
+
+</html>

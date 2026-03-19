@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard ร้านอาหาร</title>
+
+    <link rel="stylesheet" href="dash.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+
+
+    <nav class="nav">
+        <h2>Restaurant Dashboard</h2>
+    </nav>
+
+    <div class="container">
+
+        <h1>รายการจองโต๊ะ</h1>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3 id="totalBooking">0</h3>
+                <p>การจองทั้งหมด</p>
+            </div>
+
+            <div class="card">
+                <h3 id="pendingBooking">0</h3>
+                <p>รอยืนยัน</p>
+            </div>
+
+            <div class="card">
+                <h3 id="confirmBooking">0</h3>
+                <p>ยืนยันแล้ว</p>
+            </div>
+
+            <div class="card">
+                <h3 id="rejectBooking">0</h3>
+                <p>ปฎิเสธ</p>
+            </div>
+
+        </div>
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>ชื่อ</th>
+                    <th>จำนวนคน</th>
+                    <th>วันที่</th>
+                    <th>เวลา</th>
+                    <th>สถานะ</th>
+                    <th>จัดการ</th>
+                </tr>
+            </thead>
+
+            <tbody id="tableData"></tbody>
+
+        </table>
+    </div>
+
+    <script src="./index.js"></script>
+
+</body>
+
+</html>

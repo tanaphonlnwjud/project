@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>บ้านของผม - จองโต๊ะออนไลน์</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600&family=Playfair+Display:wght@500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="status.css">
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="nav-brand">
+            <div class="nav-logo">
+                <svg viewBox="0 0 16 16" fill="none">
+                    <path d="M2 12h12M4 12V6a4 4 0 018 0v6M6 6h4" stroke="white" stroke-width="1.5"
+                        stroke-linecap="round" />
+                </svg>
+            </div>
+            <div class="nav-brand-text">
+                <div class="brand-name">บ้านของผม</div>
+                <div class="brand-sub">ร้านอาหารไทยต้นตำรับ</div>
+            </div>
+        </div>
+
+        <div class="nav-links">
+            <a href="../Home.html"><button class="nav-btn">หน้าแรก</button></a>
+            <a href="/Frontend/reservations/reservations.html"><button class="nav-btn">จองโต๊ะ</button></a>
+            <a href="../status/status.html"><button class="nav-btn nav-btn-active">เช็คสถานะ</button></a>
+            <a href="/Frontend/Menu/menu.html"><button class="nav-btn">เมนู </button></a>
+        </div>
+    </nav>
+
+
+    <div class="page-header">
+        <h1>เช็คสถานะการจอง</h1>
+        <p>กรอกอีเมลเพื่อตรวจสอบรายการจองของคุณ</p>
+    </div>
+
+
+    <div class="container">
+        <div class="search-box">
+            <input type="email" id="email" placeholder="example@gmail.com">
+            <button onclick="checkStatus()">เช็คสถานะ</button>
+        </div>
+
+        <div id="result"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.13.2/dist/axios.min.js"></script>
+    <script src="status.js"></script>
+
+</body>
