@@ -2,13 +2,12 @@ version: '3.8'
 
 services:
   db:
-    image: mysql:8.0 #ปรับเป็น MySQL 8.0 เพื่อความทันสมัย
-    container_name: mysql_db_700
-    #MySQL 8.0 ใช้ plugin ตัวใหม่ จึงต้องใช้คำสั่งนี้เพื่อเข้ากับ Client รุ่นเก่าได้ดีขึ้น
+    image: mysql:8.0
+    container_name: mysql_db_700_filmlap
     command: --default-authentication-plugin=mysql_native_password
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: webdb
+      MYSQL_DATABASE: webdbfilm
     ports:
       - "8700:3306"
     volumes:

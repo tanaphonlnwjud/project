@@ -262,8 +262,8 @@ app.get("/reservations/:id", async (req, res) => {
 app.get('/test-email', async (req, res) => {
     try {
         await transporter.sendMail({
-            from: "tanaphon.thok@ku.th",
-            to: "อีเมลตัวเอง@gmail.com",
+            from: process.env.EMAIL_USER,
+            to: "tanaphonthokaew@gmail.com",
             subject: "ทดสอบระบบ",
             text: "ส่งสำเร็จแล้ว 🎉"
         });
