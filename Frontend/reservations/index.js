@@ -24,9 +24,6 @@ const vaildateData = (userData) => {
     if (!userData.lastname) {
         errors.push("กรุณากรอกนามสกุล");
     }
-    if (!userData.time) {
-        errors.push("กรุณาเลือกเวลา");
-    }
     if (!userData.size) {
         errors.push("กรุณาใส่จำนวนคน");
     }
@@ -34,8 +31,7 @@ const vaildateData = (userData) => {
         errors.push("กรุณาเลือกวันที่");
     }
     if (!selectedTime) {
-        alert("กรุณาเลือกเวลา");
-        return;
+        errors.push("กรุณาเลือกเวลา")
     }
     return errors;
 }
